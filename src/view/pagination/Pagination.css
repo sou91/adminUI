@@ -1,0 +1,23 @@
+.pagination{
+    display:flex;
+    padding-left:0;
+    list-style:none;
+    border-radius:.25rem;
+    justify-content: center;
+}
+
+.page-link{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    cursor:pointer;
+}
+
+.selected{
+    background-color: lightblue;
+}

@@ -56,10 +56,12 @@ function Table({ userInfo, rowSelect, deleteRow, rowSelectAll, editRow, changeVa
                                     <td>
                                         <img
                                             src={editImg}
-                                            onClick={() => { editRow(user.id) }} />
+                                            onClick={() => { editRow(user.id) }} 
+                                            alt='edit'/>
                                         <img
                                             src={deleteImg}
-                                            onClick={() => deleteRow(user.id)} />
+                                            onClick={() => deleteRow(user.id)} 
+                                            alt='delete'/>
                                     </td>
                                 </tr>
                             )

@@ -32,9 +32,11 @@ function App() {
       const indexOfLastUser = prevVal * usersPerPage;
       const indexOfFirstUser = indexOfLastUser - usersPerPage;
       const filteredResp = completeUserInfo.current.filter((obj) => {
+        let returnVal=false;
         if (obj.name.includes(searchedStr) || obj.email.includes(searchedStr) || obj.role.includes(searchedStr)) {
-          return true;
+          returnVal = true;
         }
+        return returnVal;
       })
       const currentUserInfo = filteredResp.slice(indexOfFirstUser, indexOfLastUser);
       setcurrentUserInfo(currentUserInfo);

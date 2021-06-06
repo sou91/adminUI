@@ -16,9 +16,9 @@ function pagination({ usersPerPage, totalUsers, paginate, currentPage }) {
                 </li>
                 {pageNumbers.map(number =>
                     <li key={number} className='page-item'>
-                        <a onClick={() => paginate(number, pageNumbers.length)} className={currentPage === number ? 'page-link selected' : 'page-link'}>
+                        <span onClick={() => paginate(number, pageNumbers.length)} className={currentPage === number ? 'page-link selected' : 'page-link'}>
                             {number}
-                        </a>
+                        </span>
                     </li>
                 )}
                 <li className='page-item'>
